@@ -1,0 +1,77 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+}
+
+.container {
+    max-width: 500px;
+    margin: 100px auto;
+    padding: 20px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    transition: transform 0.3s ease; /* Add transition for smoother animation */
+}
+
+h1 {
+    display: block;
+    margin-bottom: 10px;
+    color:green;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color:blue;
+}
+
+input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: blue;
+}
+
+/* Animation classes */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-10px); }
+    40% { transform: translateX(10px); }
+    60% { transform: translateX(-10px); }
+    80% { transform: translateX(10px); }
+    100% { transform: translateX(0); }
+}
+
+.container.failure {
+    animation: shake 0.6s; /* Apply the shake animation */
+}
+
+
+@keyframes swipe {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(300%);
+    }
+}
+
+.container.success {
+    animation: swipe 0.6s; /* Apply the swipe animation */
+    animation-fill-mode: forwards; /* Ensure the final state of the animation is maintained */
+}
+
+

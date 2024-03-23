@@ -1,0 +1,24 @@
+/* styles2.css */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+}
+
+h1 {
+    display: block;
+    margin-bottom: 10px;
+    color:blue;
+}
+
+.video-container {
+    width: 480px; /* Adjust width as needed */
+    height: 270px; /* Adjust height as needed */
+    border: 1px solid green; /* Optional: Add border for visual separation */
+    overflow: hidden; /* Optional: Hide overflowing content */
+}
+.video-container video {
+    width: 100%; /* Ensure the video fills the container */
+    height: 100%; /* Ensure the video fills the container */
+}
+
+
